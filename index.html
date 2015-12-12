@@ -69,6 +69,20 @@ In collaboration with internationally recognized researchers and clinicians, the
 <h2>
 <a id="biomedical-informatics" class="anchor" href="#biomedical-informatics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Biomedical Informatics</h2>
 
+<h3>
+<a id="translational-dashboard" class="anchor" href="#translational-dashboard" aria-hidden="true"><span class="octicon octicon-link"></span></a>Translational Dashboard</h3>
+
+<p>The translational science dashboard has been an evolving project since January of 2015. The project has been developed under the direction of the Biomedical Informatics Center at the Medical University of South Carolina, with the cooperation of the Data Science Research Group at College of Charleston. From the start, this project seeked to leverage MUSC's participation in Open Linked Data. All data utilized is available via the MUSC SPARQL endpoint located here. The endpoint can be accessed with SPARQL queries conforming to the VIVO ontology.</p>
+
+<p align="justify">
+<img src="http://i.imgur.com/Jmk0BVe.png" alt="Data Science Research Lab" height="100" align="right" hspace="10px">
+The primary visualization utilizes a tertiary plot and a slight variation of Weber's method of mapping publications to three general areas of research: Human, Animal and complex organisms, or Cells and molecules. By examining the sub MeSH tree numbers of the MeSH terms associated with a given publication, MeSH terms are grouped into one of these three categories. Following Weber's mapping scheme A is mapped to all sub MeSH numbers under the Eukaryota (B01) subtree, with exception of the human sub MeSH number B01.050.150.900.649.801.400.112.400.400 which is mapped to H. In addition the subtree Person (M01) is also mapped to H. C is mapped to Cells (A11), Archaea (B02), Bacteria (B03), Viruses (B04), Molecular Structures (G02.111.570), and Chemical Processes (G02.149). In addition to Weber's mapping scheme, we have added all sub MeSH numbers under the Disease (C) tree.
+</p>
+
+<p>As we processed publications we treated the identifiable MeSH, those that could be codified by our mapping, as proportions based on the total MeSH terms cited for the given publication. The publications are then grouped by author, represented by nodes in the tertiary plot above. These aggregated values are representative of what percentage of the author's work falls into the given category. By treating each value as the magnitude of a vector from the tertiary's centroid to the category the value represents, a vector is calculated for each category. Once the vectors of the node are computed the vector sum is taken, resulting in the coordinates of the node in the tertiary plot.</p>
+
+<p>By taking a cohort based on the population of nodes within discrete regions of the tertiary plot, the specific research trends of the cohort can be viewed over time. By default we focus on a cohort of those authors in the two regions of the tertiary plot furthest from the human research category. As cell and animal research can be considered basic science, we can follow the movement of the cohort population and see if they gravitate towards more translational research over time. It can be seen that for this specific cohort there is indeed a diaspora in the direction of human research.</p>
+
 <h2>
 <a id="computational-metabolomics" class="anchor" href="#computational-metabolomics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Computational Metabolomics</h2>
 
