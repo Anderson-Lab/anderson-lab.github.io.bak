@@ -37,7 +37,7 @@
 <p>** Please forgive the mess as I move content from an older website onto this new site.</p>
 
 <h1>
-<a id="the-lab" class="anchor" href="#the-lab" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://anderson-lab.github.io/">The Lab</a>
+<a id="the-lab" class="anchor" href="#the-lab" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://anderson-lab.github.io/">The Lab</a>
 </h1>
 
 <p align="justify">
@@ -46,31 +46,31 @@ In collaboration with internationally recognized researchers and clinicians, the
 </p>
 
 <h1>
-<a id="research-groups" class="anchor" href="#research-groups" aria-hidden="true"><span class="octicon octicon-link"></span></a>Research Groups</h1>
+<a id="research-groups" class="anchor" href="#research-groups" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Research Groups</h1>
 
 <h2>
-<a id="data-science-foundations" class="anchor" href="#data-science-foundations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Science Foundations</h2>
+<a id="data-science-foundations" class="anchor" href="#data-science-foundations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Science Foundations</h2>
 
 <p>The Data Science Foundations Group researches fundamental problems and solutions for the general field of data science, specializing in machine learning, big data, pattern analysis in high-dimensional data sets, and deep learning. Two example ongoing projects are research into kernel approximation methods for supervised learning and distributed deep learning algorithms on Apache Spark.</p>
 
 <h3>
-<a id="distributed-deep-learning-with-apache-spark" class="anchor" href="#distributed-deep-learning-with-apache-spark" aria-hidden="true"><span class="octicon octicon-link"></span></a>Distributed Deep Learning with Apache Spark</h3>
+<a id="distributed-deep-learning-with-apache-spark" class="anchor" href="#distributed-deep-learning-with-apache-spark" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Distributed Deep Learning with Apache Spark</h3>
 
 <p>It has been shown that training large models with deep learning techniques increases their performance and classification power. A group at Google pioneered two such algorithms: Downpour SGD, an asynchronous stochastic gradient descent method, and Sandblaster, a framework which is built upon the idea of distributed batch optimization. These algorithms improve training by having many model replicas while having a shared set of parameters hosted on an independent server. Additionally, each model replica is a Distbelief model, a set of machines that communicate in order to build even larger networks for classification. However, this framework has not been made available to the public and relies on the implementation of consistent and rapid communication and message-passing. There is a rise in the popularity of frameworks that simplify these communication mechanisms, most notably Apache Spark. Spark’s popularity is partially attributed to its seamless integration with other cluster frameworks, such as Hadoop, as well as its capability to act as a stand-alone cluster.  Additionally, Spark has been shown to adapt well to the parallelization of popular machine learning algorithms, which is shown through Spark’s native machine learning library. We have implemented the original system and set of algorithms in Python using XML remote procedure calls as the method of communication. We plan to compare the efficiency and ease-of-use of this system to a Spark implementation of the framework.  </p>
 
 <h3>
-<a id="fast-food-elastic-net" class="anchor" href="#fast-food-elastic-net" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fast Food Elastic Net</h3>
+<a id="fast-food-elastic-net" class="anchor" href="#fast-food-elastic-net" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fast Food Elastic Net</h3>
 
 <p>Bowick et al extended the application of fast food (FF) kernel approximations to neural networks by creating a multilayer perceptron (MLP) which learned nonlinear FF feature transforms at each layer, providing an additional nonlinearity application in the MLP algorithm. They compared the performance of FF optimized NNs (FONNs), which optimize the FF parameters alongside the weight and bias parameters in the MLP training algorithm (such as backpropagation), against that of FF randomized NNs (FRNNs), which randomly generate the FF parameters without optimization, saving computational resources during training. Dai et al extended the model that Le and Smola and Rahimi and Recht constructed on top of NNs (creating a doubly non-linear NN) by creating the Doubly Stochastic Kernel Machine. We propose to apply FF to various machine learning algorithms which are traditionally non-kernel based. We compare the performance, on a large n dataset, of a support vector machine equipped with elastic net (SVEN) (which is computationally impractical on such datasets) against that of a novel model composed of the input patterns being transformed by the nonlinear FF feature transforms before being passed through an elastic net.</p>
 
 <h2>
-<a id="bioinformatics" class="anchor" href="#bioinformatics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bioinformatics</h2>
+<a id="bioinformatics" class="anchor" href="#bioinformatics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bioinformatics</h2>
 
 <h2>
-<a id="biomedical-informatics" class="anchor" href="#biomedical-informatics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Biomedical Informatics</h2>
+<a id="biomedical-informatics" class="anchor" href="#biomedical-informatics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Biomedical Informatics</h2>
 
 <h3>
-<a id="translational-dashboard" class="anchor" href="#translational-dashboard" aria-hidden="true"><span class="octicon octicon-link"></span></a>Translational Dashboard</h3>
+<a id="translational-dashboard" class="anchor" href="#translational-dashboard" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translational Dashboard</h3>
 
 <p>The translational science dashboard has been an evolving project since January of 2015. The project has been developed under the direction of the Biomedical Informatics Center at the Medical University of South Carolina, with the cooperation of the Data Science Research Group at College of Charleston. From the start, this project seeked to leverage MUSC's participation in Open Linked Data. All data utilized is available via the MUSC SPARQL endpoint located here. The endpoint can be accessed with SPARQL queries conforming to the VIVO ontology.</p>
 
@@ -84,33 +84,35 @@ The primary visualization utilizes a tertiary plot and a slight variation of Web
 <p>By taking a cohort based on the population of nodes within discrete regions of the tertiary plot, the specific research trends of the cohort can be viewed over time. By default we focus on a cohort of those authors in the two regions of the tertiary plot furthest from the human research category. As cell and animal research can be considered basic science, we can follow the movement of the cohort population and see if they gravitate towards more translational research over time. It can be seen that for this specific cohort there is indeed a diaspora in the direction of human research.</p>
 
 <h2>
-<a id="computational-metabolomics" class="anchor" href="#computational-metabolomics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Computational Metabolomics</h2>
+<a id="computational-metabolomics" class="anchor" href="#computational-metabolomics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computational Metabolomics</h2>
 
 <h2>
-<a id="c2g2" class="anchor" href="#c2g2" aria-hidden="true"><span class="octicon octicon-link"></span></a>C2G2</h2>
+<a id="c2g2" class="anchor" href="#c2g2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>C2G2</h2>
 
 <p>The goal of the Charleston Computational Genomics Group or C2G2 is to develop computational techniques, methodology, and infrastructure to efficiently analyze genomic and bioinformatic data with the express purpose of training undergraduate students to excel as scientists, software engineers, computer scientists, and bioinformaticians. Our objectives are to (1) build cyberinfrastructure for Charleston area genomics and bioinformatics projects,
 (2) develop novel software and algorithms for data mining, data acquisition, data storage, data management, data integration, data mining, data visualization, (3) train students in the genomic and bioinformatic sciences to be utilized at local and foreign institutions, and (4) collaborate with Charleston area scientists studying genomic medicine, genome theory, gene expression, marine genomics, etc.</p>
 
 <h3>
-<a id="investigators" class="anchor" href="#investigators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Investigators</h3>
+<a id="investigators" class="anchor" href="#investigators" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Investigators</h3>
 
 <p>The PI for the project is Paul Anderson of the College of Charleston Computer Science Department. Co-PIs are Andrew Shedlock of the College of Charleston Biology Department and Dennis Watson of MUSC's Department of Pathology and Laboratory Medicine. Other members of the team are Bob Wilson, Director of the Genomics Core at MUSC. Alumni of the group are Jeremy Morgan, Connor Stanley, Matt Paul, and Tori McCaffrey.</p>
 
 <h3>
-<a id="education" class="anchor" href="#education" aria-hidden="true"><span class="octicon octicon-link"></span></a>Education</h3>
+<a id="education" class="anchor" href="#education" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Education</h3>
 
 <p>In addition to this research program, we have several ongoing academic initiatives to prepare and expose students to this exciting new field. Dr. Paul Anderson is the Director of the Data Science Program at the College of Charleston and routinely teaches Data Science courses. Dr. Andy Shedlock teaches a Vertebrate Genomics course for graduate and advanced undergraduate students, which includes a intensive laboratory experience (co-taught with Dr. Paul Anderson). In addition to this formal coursework, we are consistently meeting to discuss ongoing research projects and encourage interested students to contact one of the PIs.</p>
 
 <h3>
-<a id="big-data-infrastructure" class="anchor" href="#big-data-infrastructure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Big Data Infrastructure</h3>
+<a id="big-data-infrastructure" class="anchor" href="#big-data-infrastructure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Big Data Infrastructure</h3>
 
 <p>The C2G2 group currently maintains two compute clusters configured and optimized for computational genomics. The original commodity-based cluster is comprised of 4 nodes, with a total of 32 cores, 32 GB RAM per node, and 12 TB of raw storage. The recently awarded GEAR: CI grant has resulted in the purchase of a new high performance cluster comprised of 10 nodes, with more than 200 cores, 200+ TB of raw storage, 64 - 400 GB of RAM per node, and 4 Gb network connections. The C2G2 group also maintains cloud storage resources for the transfer, management, and organization of scientific data sets.</p>
 
 <h2>
-<a id="primary-investigator" class="anchor" href="#primary-investigator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Primary Investigator</h2>
+<a id="primary-investigator" class="anchor" href="#primary-investigator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Primary Investigator</h2>
 
-<p>Dr. Paul Anderson graduated in 2004 from Wright State University with a B.S. degree in Computer Engineering. He received his masters in Computer Science in 2006 and his Ph.D. in Computer Science &amp; Engineering in June 2010. After graduation, Dr. Anderson was awarded a Consortium of Universities Research Fellowship to study as a Bioinformatics Research Scientist for the Air Force Research Laboratory (AFRL). Dr. Anderson has published 24+ peer-reviewed articles in the fields of genomics, computational intelligence, metabolomics, e-Science, bioinformatics, cloud computing, cancer informatics, and computer science and engineering education. At present, Paul is an assistant professor in the Computer Science Department at the College of Charleston. He is the director of the Data Science Program, the first such undergraduate program in the country. Dr. Anderson is the director of several specialized and complementary research groups: Charleston Computational Genomics Group (C2G2), Computational Metabolomics Group (CMG), Bioinformatics Research Group (BiRG), and the Data Science Research Group (DSRG). His research labs at the College of Charleston specialize in applying data mining, machine learning, and artificial intelligence to the fields of bioinformatics, genomics, cancer informatics, and metabolomics. His lab develops algorithms and software to tackle some of the most challenging and interesting data intensive problems in the life sciences. Dr. Anderson’s research interests include data science, big data, pattern analysis in high-dimensionality data sets, evolutionary computation and optimization, machine learning, computational genomics, cloud computing, computational metabolomics, and eScience. He currently has multidisciplinary projects underway in metabolomics, human cognition and fatigue, toxicology, marine biology, cancer informatics, and medical and marine genomics. Dr. Anderson is also the primary investigator for new Omics NSF Research Experience for Undergraduates at the College of Charleston (<a href="http://omics.cofc.edu"></a><a href="http://omics.cofc.edu">http://omics.cofc.edu</a>).</p>
+<p>Dr. Paul Anderson graduated in 2004 from Wright State University with a B.S. degree in Computer Engineering. He received his Master of Computer Science in 2006 and his Ph.D. in Computer Science &amp; Engineering in June 2010. After graduation, Dr. Anderson was awarded a Consortium of Universities Research Fellowship to study as a Bioinformatics and Computational Research Scientist for the Air Force Research Laboratory (AFRL). Dr. Anderson has published 24+ peer-reviewed articles in the fields of genomics, data mining, machine learning, computational intelligence, metabolomics, genomics, e-Science, bioinformatics, cloud computing, biomedical informatics, cancer informatics, and computer science &amp; engineering education. 
+</p><p>
+At present, Dr. Anderson is an assistant professor in the Computer Science Department at the College of Charleston. He is the director of the Data Science Program, the first such undergraduate program in the country. Dr. Anderson is the Director and Principal Investigator (PI) of the Data Science Research Group. He is also the PI for the Charleston Computational Genomics Group (C2G2). His research lab at the College of Charleston specializes in applying data mining, machine learning, and artificial intelligence to the fields of bioinformatics, genomics, biomedical informatics, and metabolomics. His lab develops algorithms and software to tackle some of the most challenging and interesting data intensive problems in the life sciences. Dr. Anderson’s research interests include data science, big data, pattern analysis in high-dimensionality data sets, evolutionary computation and optimization, machine learning, computational genomics, cloud computing, computational metabolomics, and e-science. He currently has multidisciplinary projects underway in metabolomics, human cognition and fatigue, toxicology, marine biology, cancer informatics, and medical and marine genomics. Dr. Anderson is also the primary investigator for Omics NSF Research Experience for Undergraduates at the College of Charleston (<a href="http://omics.cofc.edu">http://omics.cofc.edu</a>).</p>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
